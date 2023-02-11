@@ -1,0 +1,14 @@
+
+One of the potential pitfalls of working with small data is ensuring
+representative splitting into test and training data sets. For example,
+relatively few studies are published that include low-yield data, which
+means that random splitting into test and training sets may result in a
+training set that completely lacks low-yield data. The result is a model
+that cannot accurately predict data with low yields. To prevent the
+problem of nonrepresentative data splitting, the data set was stratified
+based on yield prior to splitting. Stratification grouped data by
+reported oil yield to create a set of bins each with an equal number of
+data points (10 here). During splitting, at least one data point from
+each bin was included in the test set to ensure that it was
+representative of the full range of data present in the training set. The
+data were then rerandomized prior to training and validation.
